@@ -69,10 +69,10 @@ flutter:
           weight: 700
     - family: RobotoCondesed
       fonts:
-        - asset: assetes/fonts/RobotoCondesed-Bold.ttf
-        - asset: assetes/fonts/RobotoCondesed-italic.ttf
-        - asset: assetes/fonts/RobotoCondesed-Regular.ttf
-        - asset: assetes/fonts/RobotoCondesed-Light.ttf
+        - asset: assetes/fonts/RobotoCondensed-Bold.ttf
+        - asset: assetes/fonts/RobotoCondensed-italic.ttf
+        - asset: assetes/fonts/RobotoCondensed-Regular.ttf
+        - asset: assetes/fonts/RobotoCondensed-Light.ttf
           weight: 700
   
   # For details regarding fonts from package dependencies,
