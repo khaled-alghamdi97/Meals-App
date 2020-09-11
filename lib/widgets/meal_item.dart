@@ -1,7 +1,9 @@
 import 'package:Meals_App/model/meals.dart';
+import 'package:Meals_App/screens/meal-detail.dart';
 import 'package:flutter/material.dart';
 
 class MealItem extends StatelessWidget {
+  final String id;
   final String title;
   final int duration;
   final String imageUrl;
@@ -10,12 +12,15 @@ class MealItem extends StatelessWidget {
 
   const MealItem(
       {@required this.title,
+      @required this.id,
       @required this.duration,
       @required this.imageUrl,
       @required this.complexity,
       @required this.affordability});
 
-  void goToMealDetail() {}
+  void goToMealDetail(BuildContext ctx) {
+    Navigator.of(ctx).pushNamed(MealDetail.routeName, arguments: id);
+  }
 
   String get _getComplaxityString {
     switch (complexity) {
@@ -51,7 +56,7 @@ class MealItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       splashColor: Theme.of(context).primaryColorLight,
-      onTap: goToMealDetail,
+      onTap: () => goToMealDetail(context),
       child: Card(
         margin: EdgeInsets.all(15),
         elevation: 5,
