@@ -40,14 +40,14 @@ class MealItem extends StatelessWidget {
   String get _getAffordabilityString {
     switch (affordability) {
       case Affordability.Affordable:
-        return "simple";
+        return "Affordable";
         break;
       case Affordability.Pricey:
-        return "Hard";
+        return "Pricey";
         break;
 
       case Affordability.Luxurious:
-        return "Challenging";
+        return "Expensive";
         break;
     }
   }
