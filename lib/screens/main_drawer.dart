@@ -28,7 +28,7 @@ class MainDrawer extends StatelessWidget {
             width: double.infinity,
             color: Theme.of(context).accentColor,
             child: Text(
-              "Drawer",
+              "Melas",
               style: TextStyle(
                   color: Theme.of(context).primaryColor,
                   fontSize: 30,
